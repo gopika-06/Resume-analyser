@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Resume Analyzer",
+  "version": "1.0",
+  "description": "Analyse your resume and make it better",
+  "host_permissions": ["https://*/*"],
+  "permissions": [
+    "activeTab","storage","scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources" : [
+    {
+      "resources": [],
+      "matches" : ["<all_urls>"]
+    }
+  ],
+  "action": {
+   
+    "default_popup": "index.html",
+    "default_title": "Scan Resume"
+  }
+}
