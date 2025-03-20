@@ -13,7 +13,7 @@ The **Resume Analyzer** is a Chrome Extension that helps users analyze their res
 ## Installation
 1. Download or clone the repository:
    ```sh
-   git clone https://github.com/yourusername/resume-analyzer-extension.git
+   git clone https://github.com/gopika-06/resume-analyzer-extension.git
    ```
 2. Open **Google Chrome** and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** (toggle in the top-right corner).
